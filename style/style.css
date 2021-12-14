@@ -1,5 +1,5 @@
 :root {
-  --vermelho: #e50914;
+  --vermelho: #0b08af;
   --preta: #141414;
 }
 
@@ -23,13 +23,16 @@ header .container1 {
   align-items: center;
   justify-content: space-between;
   position: fixed;
-  width: 100%;
+  
   background-color: var(--preta);
+  
+  width: 100%;
+  z-index: 10;
 }
 
 header .logo {
   color: var(--vermelho);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
   font-size: 40px;
   margin-left: 5px;
 }
@@ -47,9 +50,10 @@ header nav a:hover {
 /*filme main*/
 .filme_Main {
   font-size: 16px;
-  background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/Hoc.jpg');
+  background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/Naruto.jpg');
   height: 400px;
   background-size: cover;
+  
   display: flex;
   flex-direction:column;
   justify-content: center;
@@ -57,7 +61,7 @@ header nav a:hover {
 }
 
 .filme_Main .description{
-  margin-bottom: 90px;
+  margin-bottom: 50px;
   margin-top: 10px;
 }
 
@@ -68,7 +72,8 @@ header nav a:hover {
 
 .button{
   background-color: rgba(0,0,0,.50);
-  border: none;
+  border:none;
+  box-shadow:1.5px 1.5px 3px #141414;
   color: white;
 
   padding: 15px 30px;
@@ -76,12 +81,17 @@ header nav a:hover {
   font-size: 12px;
 
   cursor: pointer;
-  transition: .6s sease all;
+  transition: box-shadow .2s ease, transform .3s ease, .6s sease all;
 }
 
 .button:hover{
   background-color: white;
   color: black;
+}
+
+.button:active{
+  box-shadow: 0 0 0, inset 1.5px 1.5px 3px;
+  transform: translate(1.5px, 1.5px);
 }
 
 .button i{
@@ -97,12 +107,38 @@ header nav a:hover {
   width: 80%;
 }
 
-.box_Filme{
-  height: 100%;
-  width: 100%;
-  display: block;
-}
+
+/* Carousel */
 
 .filme_Carousel{
-  margin-top: 5px;
+  margin-top: 15px;
+}
+
+.box_Filme{
+  height: 350px;
+  width: 100px;
+  display: inline-block;
+
+
+  cursor: pointer;
+  transition: .2s sease all;
+}
+
+.box_Filme:hover{
+  border-color: #aaa;
+  border-style: solid;
+}
+
+.box_Filme:active{
+  border:none;
+}
+
+.title_Carousel1{
+  margin-left: 15px;
+  margin-bottom: 5px;
+}
+
+.title_Carousel2{
+  margin-left: 15px;
+  margin-bottom: 5px;
 }
