@@ -51,7 +51,7 @@ header nav a:hover {
 .filme_Main {
   font-size: 16px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%);
-  background-image: url("/img/Naruto.jpg");
+  background-image: url('../img/Naruto.jpg');
   height: 400px;
   background-size: cover;
 
