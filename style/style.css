@@ -59,6 +59,7 @@ header nav a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  -webkit-text-stroke: 1px black;
 }
 
 .filme_Main .description {
